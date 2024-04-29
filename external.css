@@ -1,0 +1,62 @@
+body {
+font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.artwork {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background: 
+    linear-gradient(45deg, #FF5733, #FFBD33),
+    linear-gradient(135deg, #33FF57, #33C5FF),
+    linear-gradient(225deg, #AA33FF, #FF33E9);
+  background-size: 50% 50%;
+}
+
+.purchase-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.purchase-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.purchase-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.purchase-form input[type="text"],
+.purchase-form input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.purchase-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purchase-form button:hover {
+  background-color: #0056b3;
+}
